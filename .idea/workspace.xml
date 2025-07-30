@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bc4d86be-1506-4333-a8c8-f56bb24cb93e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/test/java/com/financial/auth/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/test/java/com/financial/auth/AuthControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +43,30 @@
     "Application.AndrewApplication.executor": "Run",
     "Application.AuthApplication.executor": "Run",
     "JUnit.AuthControllerTest.executor": "Run",
+    "JUnit.AuthControllerTest.testRegisterSuccess.executor": "Run",
     "JUnit.AuthServiceTest.executor": "Run",
     "JUnit.AuthServiceTest.loginWithEmailAndPassword_failure.executor": "Run",
     "JUnit.AuthServiceTest.loginWithEmailAndPassword_success.executor": "Run",
     "JUnit.AuthServiceTest.testRegisterFailure.executor": "Run",
     "JUnit.AuthServiceTest.testRegisterSuccess.executor": "Run",
+    "JUnit.ProfitAndLoseServiceTest.executor": "Run",
+    "JUnit.ProfitAndLoseServiceTest.testGetAllProfitAndLosesDtos.executor": "Run",
+    "JUnit.ProfitAndLoseServiceTest.testGetProfitAndLoseDto_Success.executor": "Run",
+    "JUnit.TransactionControllerTest.testCreateTransaction_Success.executor": "Run",
+    "JUnit.TransactionControllerTest.testDeleteTransaction_Success.executor": "Run",
+    "JUnit.TransactionControllerTest.testUpdateTransaction_Success.executor": "Run",
+    "JUnit.TransactionControllerTest.testWhoAmI_ReturnsUid.executor": "Run",
+    "JUnit.TransactionServiceTests.executor": "Run",
+    "JUnit.TransactionServiceTests.testDeleteTransaction_Success.executor": "Run",
+    "JUnit.TransactionServiceTests.testDeleteTransaction_Unauthorized.executor": "Run",
+    "JUnit.andrew in mainBackend.executor": "Coverage",
+    "JUnit.auth in auth.executor": "Coverage",
     "Kotlin.CheckerApplicationKt.executor": "Run",
     "Maven.andrew [clean,install].executor": "Run",
     "Maven.auth [clean,install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "security__on__endpoints",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/PC/Development/FinProject/Backend/auth/pom.xml",
@@ -77,88 +93,76 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AuthServiceTest.loginWithEmailAndPassword_failure">
-    <configuration name="AndrewApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.financial.andrew.AndrewApplication" />
+  <component name="RunManager" selected="JUnit.auth in auth">
+    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.financial.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.financial.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthControllerTest.testRegisterSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.financial.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.financial.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthControllerTest" />
+      <option name="METHOD_NAME" value="testRegisterSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.financial.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.financial.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="andrew in mainBackend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mainBackend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.financial.andrew.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/financialBe/src/test/java/com/financial/andrew" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthApplication" />
+    <configuration name="auth in auth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.financial.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthServiceTest.loginWithEmailAndPassword_failure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.financial.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.financial.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthServiceTest" />
-      <option name="METHOD_NAME" value="loginWithEmailAndPassword_failure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthServiceTest.loginWithEmailAndPassword_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.financial.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.financial.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthServiceTest" />
-      <option name="METHOD_NAME" value="loginWithEmailAndPassword_success" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthServiceTest.testRegisterFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.financial.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.financial.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthServiceTest" />
-      <option name="METHOD_NAME" value="testRegisterFailure" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/auth/src/test/java/com/financial/auth" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthServiceTest.loginWithEmailAndPassword_failure" />
-        <item itemvalue="JUnit.AuthServiceTest.loginWithEmailAndPassword_success" />
-        <item itemvalue="Application.AuthApplication" />
-        <item itemvalue="JUnit.AuthServiceTest.testRegisterFailure" />
-        <item itemvalue="Application.AndrewApplication" />
+        <item itemvalue="JUnit.auth in auth" />
+        <item itemvalue="JUnit.AuthServiceTest" />
+        <item itemvalue="JUnit.AuthControllerTest" />
+        <item itemvalue="JUnit.AuthControllerTest.testRegisterSuccess" />
+        <item itemvalue="JUnit.andrew in mainBackend" />
       </list>
     </recent_temporary>
   </component>
@@ -172,5 +176,12 @@
       <updated>1753178275291</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Backend$auth_in_auth.ic" NAME="auth in auth Coverage Results" MODIFIED="1753879952562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$andrew_in_mainBackend.ic" NAME="andrew in mainBackend Coverage Results" MODIFIED="1753879777877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$AuthControllerTest_testRegisterSuccess.ic" NAME="AuthControllerTest.testRegisterSuccess Coverage Results" MODIFIED="1753880457537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.financial.auth.*</FILTER>
+    </SUITE>
   </component>
 </project>

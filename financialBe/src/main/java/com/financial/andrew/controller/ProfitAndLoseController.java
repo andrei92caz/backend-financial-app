@@ -30,14 +30,22 @@ public class ProfitAndLoseController {
     }
 
     @GetMapping("/")
-    public ResponseEntity<List<ProfitAndLoseDto>> getAllProfitAndLoses(){
-        List<ProfitAndLoseDto> profitAndLoseDtos = profitAndLoseService.getAllProfitAndLosesDtos();
+    public ResponseEntity<List<ProfitAndLoseDto>> getAllProfitAndLoses(Authentication authentication) {
+        if (authentication == null || authentication.getName() == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+        String uid = authentication.getName();
+        List<ProfitAndLoseDto> profitAndLoseDtos = profitAndLoseService.getAllProfitAndLosesDtos(uid);
         return new ResponseEntity<>(profitAndLoseDtos, HttpStatus.OK);
     }
 
     @GetMapping("/{profitAndLoseId}")
-    public ResponseEntity<ProfitAndLoseDto> getProfitAndLoseDetails(@PathVariable("profitAndLoseId") Long profitAndLoseId){
-        ProfitAndLoseDto profitAndLoseDto = profitAndLoseService.getProfitAndLoseDto(profitAndLoseId);
+    public ResponseEntity<ProfitAndLoseDto> getProfitAndLoseDetails(@PathVariable("profitAndLoseId") Long profitAndLoseId, Authentication authentication) {
+        if (authentication == null || authentication.getName() == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+        String uid = authentication.getName();
+        ProfitAndLoseDto profitAndLoseDto = profitAndLoseService.getProfitAndLoseDto(profitAndLoseId,uid);
         return new ResponseEntity<>(profitAndLoseDto, HttpStatus.OK);
     }
 
@@ -48,24 +56,7 @@ public class ProfitAndLoseController {
         }
 
         String uid = authentication.getName();
-        System.out.println("UID: " + uid);
         ProfitAndLoseCreateDto created = profitAndLoseService.create(profitAndLoseCreateDto, uid);
         return new ResponseEntity<>(created, HttpStatus.CREATED);
     }
-
-//    @PostMapping("/add-transaction/{profitAndLoseId}")
-//    public ResponseEntity<TransactionDto> addTransaction(@PathVariable Long profitAndLoseId, @RequestBody @Valid TransactionDto transactionDto) {
-//        transactionDto.setProfitAndLoseId(profitAndLoseId);
-//        TransactionDto createdTransaction = transactionService.create(transactionDto);
-//
-//        return new ResponseEntity<>(createdTransaction, HttpStatus.CREATED);
-//    }
-
-//    @PostMapping("/delete-transaction/{transactionId}")
-//    public ResponseEntity<String> deleteTransaction(@PathVariable Long transactionId) {
-//        transactionService.deleteTransaction(transactionId);
-//        return new ResponseEntity<>("Transaction deleted successfully", HttpStatus.OK);
-//    }
-
-
 }
