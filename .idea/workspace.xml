@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc4d86be-1506-4333-a8c8-f56bb24cb93e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/test/java/com/financial/auth/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/test/java/com/financial/auth/AuthControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/auth/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +40,9 @@
   "keyToString": {
     "Application.AndrewApplication.executor": "Run",
     "Application.AuthApplication.executor": "Run",
-    "JUnit.AuthControllerTest.executor": "Run",
+    "JUnit.AuthControllerTest.executor": "Coverage",
     "JUnit.AuthControllerTest.testRegisterSuccess.executor": "Run",
-    "JUnit.AuthServiceTest.executor": "Run",
+    "JUnit.AuthServiceTest.executor": "Coverage",
     "JUnit.AuthServiceTest.loginWithEmailAndPassword_failure.executor": "Run",
     "JUnit.AuthServiceTest.loginWithEmailAndPassword_success.executor": "Run",
     "JUnit.AuthServiceTest.testRegisterFailure.executor": "Run",
@@ -66,7 +64,7 @@
     "Maven.auth [clean,install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "security__on__endpoints",
+    "git-widget-placeholder": "financialBe-tests",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/PC/Development/FinProject/Backend/auth/pom.xml",
@@ -178,8 +176,14 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Backend$auth_in_auth.ic" NAME="auth in auth Coverage Results" MODIFIED="1753879952562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$auth_in_auth.ic" NAME="auth in auth Coverage Results" MODIFIED="1753880978307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$AuthServiceTest.ic" NAME="AuthServiceTest Coverage Results" MODIFIED="1753880964939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.financial.auth.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Backend$andrew_in_mainBackend.ic" NAME="andrew in mainBackend Coverage Results" MODIFIED="1753879777877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$AuthControllerTest.ic" NAME="AuthControllerTest Coverage Results" MODIFIED="1753880951768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.financial.auth.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Backend$AuthControllerTest_testRegisterSuccess.ic" NAME="AuthControllerTest.testRegisterSuccess Coverage Results" MODIFIED="1753880457537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.financial.auth.*</FILTER>
     </SUITE>

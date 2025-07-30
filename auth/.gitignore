@@ -31,3 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
+auth/src/main/resources/firebase/finapp-key.json
