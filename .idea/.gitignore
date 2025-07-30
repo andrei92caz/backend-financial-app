@@ -11,3 +11,4 @@ target/
 Thumbs.db
 
 auth/src/main/resources/firebase/finapp-key.json
+.idea/workspace.xml
