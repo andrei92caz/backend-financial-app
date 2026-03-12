@@ -7,11 +7,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseToken;
 import com.google.firebase.auth.UserRecord;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@Slf4j
 @Service
 public class AuthService {
     @Value("${firebase.api.key}")
@@ -60,7 +62,25 @@ public class AuthService {
         } else {
             throw new RuntimeException("Authentication failed: " + response.getBody());
         }
+    }
 
+    public void sendPasswordResetEmail(String email) {
+        try {
+            String url = "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=" + FIREBASE_API_KEY;
 
+            String payload = String.format(
+                    "{\"requestType\":\"PASSWORD_RESET\",\"email\":\"%s\"}",
+                    email
+            );
+
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.APPLICATION_JSON);
+
+            HttpEntity<String> entity = new HttpEntity<>(payload, headers);
+
+            restTemplate.exchange(url, HttpMethod.POST, entity, String.class);
+        } catch (Exception e) {
+            log.warn("Failed to send password reset email (details suppressed for security)");
+        }
     }
 }

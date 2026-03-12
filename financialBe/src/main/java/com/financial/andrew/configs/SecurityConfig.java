@@ -1,6 +1,5 @@
 package com.financial.andrew.configs;
 
-
 import org.financial.common.configs.SecuritySharedConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,8 +18,13 @@ public class SecurityConfig {
         return SecuritySharedConfig
                 .applyCommonSecurity(http)
                 .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/profit-and-lose/**").permitAll()
+                        .requestMatchers("/income/**").permitAll()
+                        .requestMatchers("/spending/**").permitAll()
+                        .requestMatchers("/transactions/**").permitAll()
                         .anyRequest().authenticated()
                 )
+                .cors(cors -> cors.and())  // Enable CORS
                 .addFilterBefore(new FirebaseAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
                 .build();
     }

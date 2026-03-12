@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface ProfitAndLoseService {
 
-    ProfitAndLoseDto getProfitAndLoseDto(Long profitAndLoseId);
+    ProfitAndLoseDto getProfitAndLoseDto(Long profitAndLoseId, String uid);
 
-    List<ProfitAndLoseDto> getAllProfitAndLosesDtos();
+    List<ProfitAndLoseDto> getAllProfitAndLosesDtos(String uid);
 
     ProfitAndLoseCreateDto create(ProfitAndLoseCreateDto profitAndLoseDto, String uid);
 }
