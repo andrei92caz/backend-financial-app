@@ -1,9 +1,11 @@
 package com.financial.auth;
 
 import com.financial.auth.controller.AuthController;
+import com.financial.auth.dto.ForgotPasswordRequest;
 import com.financial.auth.dto.RegisterRequest;
 import com.financial.auth.service.AuthService;
 import com.google.firebase.auth.FirebaseAuthException;
+import jakarta.servlet.http.HttpServletRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -12,8 +14,9 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.ResponseEntity;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.*;
+
 
 public class AuthControllerTest {
 
@@ -85,5 +88,19 @@ public class AuthControllerTest {
         // Assert
         assertEquals(401, response.getStatusCodeValue());
         assertEquals("Login failed: Invalid credentials", response.getBody());
+    }
+
+    @Test
+    void testForgotPasswordSuccess() {
+        ForgotPasswordRequest request = new ForgotPasswordRequest("test@example.com");
+        HttpServletRequest httpRequest = mock(HttpServletRequest.class);
+        when(httpRequest.getRemoteAddr()).thenReturn("127.0.0.1");
+        doNothing().when(authService).sendPasswordResetEmail(anyString());
+
+        ResponseEntity<?> response = authController.forgotPassword(request, httpRequest);
+
+        assertEquals(200, response.getStatusCodeValue());
+        assertEquals("If an account with that email exists, a password reset link has been sent.", response.getBody());
+        verify(authService).sendPasswordResetEmail("test@example.com");
     }
 }

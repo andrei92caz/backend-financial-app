@@ -19,6 +19,7 @@ import org.springframework.web.client.RestTemplate;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 public class AuthServiceTest {
@@ -104,6 +105,33 @@ public class AuthServiceTest {
         });
 
         assertTrue(ex.getMessage().contains("Authentication failed"));
+    }
+
+    @Test
+    void sendPasswordResetEmail_success() {
+        ResponseEntity<String> response = new ResponseEntity<>("", HttpStatus.OK);
+
+        when(restTemplate.exchange(
+                anyString(),
+                eq(HttpMethod.POST),
+                any(HttpEntity.class),
+                eq(String.class)
+        )).thenReturn(response);
+
+        assertDoesNotThrow(() -> authService.sendPasswordResetEmail("test@example.com"));
+        verify(restTemplate, times(1)).exchange(anyString(), eq(HttpMethod.POST), any(HttpEntity.class), eq(String.class));
+    }
+
+    @Test
+    void sendPasswordResetEmail_firebaseError_doesNotThrow() {
+        when(restTemplate.exchange(
+                anyString(),
+                eq(HttpMethod.POST),
+                any(HttpEntity.class),
+                eq(String.class)
+        )).thenThrow(new RuntimeException("Firebase error"));
+
+        assertDoesNotThrow(() -> authService.sendPasswordResetEmail("test@example.com"));
     }
 }
 
