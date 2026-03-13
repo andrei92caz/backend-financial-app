@@ -18,6 +18,6 @@ public class FirebaseAuthenticationFilter extends FirebaseAuthenticationFilterBa
 
     @Override
     protected boolean shouldSkipFilter(HttpServletRequest request) {
-        return false;
+        return "OPTIONS".equalsIgnoreCase(request.getMethod());
     }
 }
