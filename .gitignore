@@ -1,0 +1,10 @@
+# Claude Code settings (local overrides and secrets)
+.claude/settings.local.json
+.claude/secrets*
+
+# Environment / secrets
+.env
+.env.*
+secrets.json
+secrets.yaml
+secrets.yml
