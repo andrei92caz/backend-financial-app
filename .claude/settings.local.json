@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:/PC/Development/FinProject/Backend\" -name \"*.java\" -path \"*/auth/*\" 2>/dev/null | head -30)",
+      "Bash(find /c/PC/Development/FinProject/Backend/financialBe/src -name \"*.java\" | xargs grep -l -i \"profit\" 2>/dev/null)",
+      "Bash(git -C /c/PC/Development/FinProject/Frontend/financialFeAngular status --short)",
+      "Bash(find /c/PC/Development/FinProject/Backend/financialBe/src -name \"FirebaseConfig.java\" 2>/dev/null; find /c/PC/Development/FinProject/Backend/financialBe/src -name \"*.java\" | xargs grep -l \"FirebaseApp\\|FirebaseAuth\" 2>/dev/null)",
+      "Bash(find /c/PC/Development/FinProject/Backend/financialBe/src/main/java -name \"*.java\" | xargs grep -l \"@SpringBootApplication\\|@ComponentScan\" 2>/dev/null | xargs cat 2>/dev/null)",
+      "Bash(git -C /c/PC/Development/FinProject/Frontend/financialFeAngular add \\\\\n  src/app/app.module.ts \\\\\n  src/app/component/add-income-modal/add-income-modal.component.html \\\\\n  src/app/component/add-income-modal/add-income-modal.component.ts \\\\\n  src/app/component/add-profit-and-lose-modal/add-profit-and-lose-modal.component.ts \\\\\n  src/app/component/add-spending-modal/add-spending-modal.component.html \\\\\n  src/app/component/add-spending-modal/add-spending-modal.component.ts \\\\\n  src/app/component/header/header.component.html \\\\\n  src/app/component/income-chart/income-chart.component.ts \\\\\n  src/app/component/income/income.component.spec.ts \\\\\n  src/app/component/income/income.component.ts \\\\\n  src/app/component/profit-and-lose/profit-and-lose.component.html \\\\\n  src/app/component/profit-and-lose/profit-and-lose.component.ts \\\\\n  src/app/component/spending-chart/spending-chart.component.ts \\\\\n  src/app/component/spending/spending.component.spec.ts \\\\\n  src/app/component/spending/spending.component.ts \\\\\n  src/app/dtos/income-dto.model.ts \\\\\n  src/app/dtos/profit-and-lose-dto.model.ts \\\\\n  src/app/dtos/spending-dto.model.ts \\\\\n  src/app/interceptors/auth.interceptor.ts \\\\\n  src/app/services/income.service.spec.ts \\\\\n  src/app/services/income.service.ts \\\\\n  src/app/services/profit-and-lose.service.ts \\\\\n  src/app/services/spending.service.spec.ts \\\\\n  src/app/services/spending.service.ts && git -C /c/PC/Development/FinProject/Frontend/financialFeAngular diff --cached --stat)",
+      "Bash(git -C /c/PC/Development/FinProject/Backend add \\\\\n  financialBe/.gitignore \\\\\n  financialBe/src/main/java/com/financial/andrew/AndrewApplication.java \\\\\n  financialBe/src/main/java/com/financial/andrew/configs/FirebaseAuthenticationFilter.java && \\\\\ngit -C /c/PC/Development/FinProject/Backend diff --cached --stat)",
+      "Bash(git -C /c/PC/Development/FinProject/Backend log --oneline -3 && git -C /c/PC/Development/FinProject/Backend branch --show-current)"
+    ]
+  }
+}

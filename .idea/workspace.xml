@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc4d86be-1506-4333-a8c8-f56bb24cb93e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/common/target/classes/org/financial/common/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/org/financial/common/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/org/financial/common/configs/FirebaseConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/org/financial/common/configs/FirebaseConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/org/financial/common/configs/RestTemplateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/org/financial/common/configs/RestTemplateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/org/financial/common/configs/SecuritySharedConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/org/financial/common/configs/SecuritySharedConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/org/financial/common/security/FirebaseAuthenticationFilterBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/org/financial/common/security/FirebaseAuthenticationFilterBase.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="30E2BR2wOCUJBYcbSjirU8YyY1Z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AndrewApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AuthApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthControllerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AuthControllerTest.testRegisterSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AuthServiceTest.loginWithEmailAndPassword_failure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTest.loginWithEmailAndPassword_success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTest.testRegisterFailure.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AuthServiceTest.testRegisterSuccess.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProfitAndLoseServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProfitAndLoseServiceTest.testGetAllProfitAndLosesDtos.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProfitAndLoseServiceTest.testGetProfitAndLoseDto_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionControllerTest.testCreateTransaction_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionControllerTest.testDeleteTransaction_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionControllerTest.testUpdateTransaction_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionControllerTest.testWhoAmI_ReturnsUid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionServiceTests.testDeleteTransaction_Success.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionServiceTests.testDeleteTransaction_Unauthorized.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.andrew in mainBackend.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.auth in auth.executor&quot;: &quot;Coverage&quot;,
+    &quot;Kotlin.CheckerApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.andrew [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auth [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;add-transactions-bugfix&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PC/Development/FinProject/Backend/auth/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PC\Development\FinProject\Backend\auth\src\main\resources\firebase" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AndrewApplication">
+    <configuration name="AndrewApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.financial.andrew.AndrewApplication" />
+      <module name="mainBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.financial.andrew.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthApplication" />
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.financial.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.financial.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.financial.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.financial.auth.AuthServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="auth in auth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/auth/src/test/java/com/financial/auth" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckerApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.financial.alerts.checker.CheckerApplicationKt" />
+      <module name="checker" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AuthApplication" />
+        <item itemvalue="Application.AndrewApplication" />
+        <item itemvalue="Kotlin.CheckerApplicationKt" />
+        <item itemvalue="JUnit.auth in auth" />
+        <item itemvalue="JUnit.AuthServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc4d86be-1506-4333-a8c8-f56bb24cb93e" name="Changes" comment="" />
+      <created>1753178275291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753178275291</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Backend$auth_in_auth.ic" NAME="auth in auth Coverage Results" MODIFIED="1753880978307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$AuthServiceTest.ic" NAME="AuthServiceTest Coverage Results" MODIFIED="1753880964939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.financial.auth.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Backend$andrew_in_mainBackend.ic" NAME="andrew in mainBackend Coverage Results" MODIFIED="1753879777877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$AuthControllerTest.ic" NAME="AuthControllerTest Coverage Results" MODIFIED="1753880951768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.financial.auth.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Backend$CheckerApplicationKt.ic" NAME="CheckerApplicationKt Coverage Results" MODIFIED="1758151048782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Backend$AuthControllerTest_testRegisterSuccess.ic" NAME="AuthControllerTest.testRegisterSuccess Coverage Results" MODIFIED="1753880457537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.financial.auth.*</FILTER>
+    </SUITE>
+  </component>
+</project>
